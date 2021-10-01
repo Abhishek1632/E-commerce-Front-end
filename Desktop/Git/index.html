@@ -5,45 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>css</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+
+        box-sizing: border-box;
+      }
+
+      h2:nth-child(1) {
+        padding: 5px;
+        color: aqua;
+        background-color: yellowgreen;
+        transition-duration: 0.5s;
+        transition-timing-function: linear;
+      }
+      h2:nth-child(2) {
+        padding: 5px;
+        color: aqua;
+        background-color: rgb(142, 24, 49);
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in;
+      }
+
+      h2:hover {
+        background-color: tomato;
+        cursor: pointer;
+      }
+    </style>
   </head>
-  <style>
-    * {
-      padding: 0px;
-      margin: 0px;
-
-      box-sizing: border-box;
-    }
-   
-    h2{
-      padding: 5px;
-      color: aqua;
-      background-color: yellowgreen;
-    }
-    h2:hover{
-      background-color: tomato;
-      cursor: pointer;
-
-    }
-    div::selection{
-      background-color: teal;
-    }
-    input:focus{
-      background-color: orange;
-      color: blue;
-      font-size: 4rem;
-    }
-    h2::before{
-      content: "I am after";
-      font-size: 0.5rem;
-      color: brown;
-      position: relative;
-    }
-      
-  </style>
   <body>
-<h2> I am heading</h2> 
-<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, sunt!</div>     
-</div>
-<input type="text">
+    <h2>I am heading</h2>
+    <h2>I am heading</h2>
   </body>
 </html>
