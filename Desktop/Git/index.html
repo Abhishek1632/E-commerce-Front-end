@@ -4,34 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>full stack session</title>
-    <style>
-        *{
-            padding: 0px;
-            margin: 0px;
-            box-sizing: border-box;
-        
-        }
-        nav{
-            background-color: brown;
-            color: rebeccapurple;
-            padding: 20px;
-            font-size: 1.2rem;
-            position: sticky;
-            width: 100vw;
-            top: 20px;
-
-
-        }
-    </style>
-<body>
-    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus necessitatibus est velit illo eligendi, quam labore, praesentium iusto reiciendis dignissimos provident aperiam molestiae animi iure consequatur amet nisi atque tenetur.</div>
-
-
-  <nav>lorem</nav>
-  <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid facere placeat accusamus quae exercitationem mollitia itaque unde atque quas corporis nesciunt, quam laboriosam dolorum odio, velit ipsum doloribus voluptatibus voluptates. Commodi excepturi facilis laborum, illo mollitia tempora, sed rerum repellendus numquam, earum quibusdam officiis fugit aperiam. Voluptatibus cupiditate eveniet reprehenderit non hic dignissimos laborum obcaecati, quia explicabo, delectus quibusdam rem nemo rerum quasi accusantium veritatis earum fugit? Dolore dolor iure voluptatibus, velit sed soluta assumenda illum error alias placeat! Animi voluptatum eligendi error eaque asperiores, veniam, tenetur perspiciatis earum non laboriosam omnis quod. Neque veniam deserunt at voluptatem quasi eius?</div>
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis velit quibusdam harum molestias veritatis rem officiis vero error incidunt sapiente eligendi architecto ipsa tempora deleniti laborum dicta atque suscipit esse, ut hic fugiat. Cupiditate esse voluptas consequuntur quas sit dolorem voluptatum eius veniam, eum accusamus laudantium, quod dicta, quasi ex.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem ex amet doloribus labore debitis perspiciatis neque nemo eum a totam possimus accusantium consequuntur unde dolores nam placeat explicabo iure, facilis perferendis voluptatum dolorem laborum, excepturi veniam. Adipisci accusamus vero molestiae nemo veniam possimus dicta, inventore esse fugit sint blanditiis aliquam amet ut. Sed doloremque eius maiores harum quisquam debitis ipsum, in exercitationem at magni praesentium minus vero earum aut a quam accusantium rem adipisci voluptate? Quia et atque a nihil, ipsam, error odit maxime facilis ullam mollitia voluptate? Voluptatibus veritatis eius incidunt illo qui minus iste culpa temporibus laborum dicta odit expedita hic, molestias molestiae earum voluptates vitae quae, quam dolore placeat dignissimos modi, nihil itaque. Corporis doloribus culpa laborum quo delectus porro. Sint voluptate repellendus temporibus rerum ad perspiciatis consequatur alias sequi cum suscipit explicabo provident iusto, quisquam porro deleniti amet, officia quaerat id! Totam modi tenetur porro eum repudiandae doloribus eius, illum voluptatum amet perspiciatis iste, illo, quo delectus culpa libero dignissimos sequi distinctio numquam. Porro velit ullam nostrum sit ducimus ea iste fugit laboriosam voluptatum delectus dolores corrupti natus, consequatur officiis esse sint illum magni quam rerum amet deleniti vero doloribus sunt! Nesciunt distinctio, maxime eius repellat deserunt nulla delectus error nobis enim veniam fugiat iste numquam laboriosam aut, quis impedit facere magni pariatur inventore consectetur. Vitae voluptatibus totam ea porro atque. Aspernatur quos possimus quas dolor ipsam omnis accusantium? Reiciendis officia unde aperiam cumque quo laudantium voluptas ea perspiciatis tempora rem at, error, aut debitis aliquid, delectus in quam qui consectetur? Expedita, repudiandae ullam cumque id asperiores perferendis voluptate quo similique nihil nobis sint laudantium quas et ipsum explicabo laboriosam ab distinctio delectus. Beatae magnam, praesentium iste, nam vitae dolores pariatur asperiores culpa sapiente dolor modi fugit, maiores ab totam laboriosam minima esse quis inventore eius cumque! Ab minima impedit neque quo voluptates laudantium ipsum veniam est soluta maiores, voluptatum ea aspernatur tenetur perferendis beatae et nisi commodi, ducimus sapiente, accusamus qui dolores id? Dolorum architecto dicta eum soluta exercitationem aliquid eos, neque suscipit est id consequatur sint adipisci facere molestias ipsum minima quaerat, error temporibus laudantium modi labore porro perspiciatis, ex iusto. Earum commodi ad, dolore nulla ipsa nam hic eos? Eos modi quae animi doloremque, laboriosam ut obcaecati praesentium nam nostrum asperiores, rerum repudiandae repellendus molestiae fugiat natus. Sed non ea, quis deleniti quaerat cumque alias beatae quidem, perferendis repellat nesciunt praesentium perspiciatis rerum fugiat. Beatae consequuntur necessitatibus nostrum commodi. Culpa explicabo sapiente, dolores id molestias dolor ab assumenda consequatur dolore eligendi. Itaque veniam voluptas dignissimos? Impedit libero maxime vero quod exercitationem alias consequatur saepe voluptatem ullam, amet ad ipsam harum velit asperiores, reiciendis repudiandae molestias excepturi animi. Accusantium fuga minus quis odit animi iusto. Magni non ut distinctio quae earum. Dicta perspiciatis tempora odit aliquam modi possimus libero recusandae voluptates dolor laboriosam vero error cum, pariatur ducimus repudiandae deserunt assumenda alias vitae quo, nam sit neque ipsa. Voluptatibus ab tempora quidem! Eligendi quae reiciendis iure, itaque aut velit ullam eius sit cum!
-    </body>
-
+    <title>Document</title>
+  </head>
+  <style>
+    div.parent {
+      background-color: black;
+      height: 200px;
+      display: flex;
+      align-items: stretch;
+    }
+    div.child {
+      background-color: cadetblue;
+      flex-basis: 80%;
+    }
+    div.slidebar {
+      background-color: crimson;
+      flex-basis: 20%;
+      animation: 0.5s expand linear infinite;
+    }
+    @media (max-width: 450px) {
+      div.slidebar {
+        flex-basis: 0%;
+      }
+    }
+    @keyframes expand {
+      0% {
+        flex-basis: 0%;
+      }
+      100% {
+        flex-basis: 50%;
+      }
+    }
+  </style>
+  <body>
+    <div class="parent">
+      <div class="slidebar"></div>
+      <div class="child"></div>
+    </div>
+  </body>
 </html>
