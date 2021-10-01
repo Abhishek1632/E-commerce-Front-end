@@ -4,38 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>css</title>
-    <style>
-      * {
-        padding: 0px;
-        margin: 0px;
-
-        box-sizing: border-box;
-      }
-
-      h2:nth-child(1) {
-        padding: 5px;
-        color: aqua;
-        background-color: yellowgreen;
-        transition-duration: 0.5s;
-        transition-timing-function: linear;
-      }
-      h2:nth-child(2) {
-        padding: 5px;
-        color: aqua;
-        background-color: rgb(142, 24, 49);
-        transition-duration: 0.5s;
-        transition-timing-function: ease-in;
-      }
-
-      h2:hover {
-        background-color: tomato;
-        cursor: pointer;
-      }
-    </style>
+    <title>Document</title>
   </head>
+  <style>
+    div.parent {
+      height: 500px;
+      padding: 0px;
+      box-sizing: border-box;
+      background-color: black;
+    }
+
+    div.child {
+      height: 100px;
+      width: 100px;
+      background-color: orange;
+      animation: 1s move ease;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 3;
+      animation-direction: alternate;
+      border-radius: 50%;
+      animation-delay: 1s;
+    }
+
+    @keyframes move {
+      0% {
+        transform: translateY(0vw);
+      }
+      50%{
+          transform: translate(300px);
+          background-color: aqua;
+      }
+      100%{
+        transform: translateY(400px);
+        background-color: brown;
+      }
+      }
+    }
+  </style>
   <body>
-    <h2>I am heading</h2>
-    <h2>I am heading</h2>
+    <div class="parent">
+      <div class="child"></div>
+    </div>
   </body>
 </html>
