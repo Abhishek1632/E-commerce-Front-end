@@ -1,11 +1,6 @@
-var list = document.querySelector("ul");
+var add = function (a = 0, b = 0) {
+  var sum = a + b;
+  return sum;
+};
 
-var arr = ["go to the gym", "cook the oatmeal", "eat"];
-arr.push("Complete the assginment");
-
-for (var i = 0; i <= arr.length; i++) {
-  var element = document.createElement("li");
-  var textNode = document.createTextNode(arr[i]);
-  element.appendChild(textNode);
-  list.appendChild(element);
-}
+console.log(add(10, 20));
