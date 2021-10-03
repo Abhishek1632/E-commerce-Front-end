@@ -1,49 +1,12 @@
-const a = document.getElementsByTagName("input")[0];
-const b = document.getElementsByTagName("input")[1];
+var arr[1,  2, 3,  4,  5, 6,  7,  8,  9]
 
-const add = document.querySelector("#add");
-const multiply = document.querySelector("#multiply");
-const result = document.querySelector(".result");
+var new_arr = arr.filter((Element,index)   => {
 
-switch  (opertion) {
-  case "add":
-   resultBox.innerHTML  = parseInt(a.value)  + (parseInt(b.value);
-break
-case  "multiply":
-
- resultBox.innerHTML  = parseInt(a.value)  *   (parseInt(b.value);
-
-break
-default:
-resultBox.innerHTML = "Not a valid opertion"
+    if
+    (Element%  2 === 0)  return true
+})
+// for(var i = 0;i<arr,length;i++)
+// if(arr[i]%2== 0) new_arr.push(arr[i])
 
 
-};
-
-
-// const product = () => {
-//   const result = parseInt(a.value) * parseInt(b.value);
-//   resultBox.innerHTML = result;
-// };
-
-const calculate = (event, operation) => {
-//     console.log("adding");
-//   } else  if (operation == "add") {
-//  if (opertion == "multiply") {
-//     console.log("multiply");
-//   }
-// };
-
-if (operation == "add") {
-  console.log("adding");
-} else if (operation == "multiply") {
-  console.log("multiply");
-}
-add.addEventListener("click", (Event) => {
-  calculate(Event, "add");
-});
-
-multiply.addEventListener("click", (Event) => {
-  calculate(Event, "multiply");
-});
-
+console.log(new_arr)
