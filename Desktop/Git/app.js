@@ -1,6 +1,13 @@
-var add = function (a = 0, b = 0) {
-  var sum = a + b;
-  return sum;
+var button = document.querySelector("button");
+var input = document.querySelector("input");
+var list = document.querySelector("ul");
+
+const callbackfunc = (event) => {
+  const inputValue = input.value;
+  const element = document.createElement("li");
+  const textNode = document.createTextNode(inputValue);
+  element.appendChild(textNode);
+  list.appendChild(element);
 };
 
-console.log(add(10, 20));
+button.addEventListener("click", callbackfunc);
